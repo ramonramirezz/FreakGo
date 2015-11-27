@@ -21,8 +21,11 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int user=0x7f020001;
+        public static final int ic_action_av_playlist_add=0x7f020000;
+        public static final int ic_action_av_queue_music=0x7f020001;
+        public static final int ic_action_navigation_menu=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int user=0x7f020004;
     }
     public static final class id {
         public static final int action_settings=0x7f08000a;
@@ -39,7 +42,8 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int registrar=0x7f030001;
+        public static final int nav_drawer=0x7f030001;
+        public static final int registrar=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
