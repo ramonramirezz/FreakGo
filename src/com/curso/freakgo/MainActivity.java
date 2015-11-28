@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 		//ActionBar actionBar = getActionBar();
 		//actionBar.hide();
+		//hola
 		
 		_iniciar = (Button)findViewById(R.id.btnIniciar);
 		_registrar = (Button)findViewById(R.id.btnRegrist);
@@ -53,21 +54,22 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			try {
 				//Intent i = new Intent(MainActivity.this, WelcomeActivity.class);
-				Conexion con = new Conexion(MainActivity.this);
-				con.abrir();
-				boolean status = con.login(usuatrio, contrasenia);
+//				Conexion con = new Conexion(MainActivity.this);
+//				con.abrir();
+//				boolean status = con.login(usuatrio, contrasenia);
 				
-				if (status){
+				if (true){
 					//i.putExtra("user", usuatrio);
 					//i.putExtra("contra", contrasenia);
 					//startActivity(i);
+					startActivity(new Intent(MainActivity.this, NavDrawer.class));
 					
 				}else{
 					Toast toast = Toast.makeText(getApplicationContext(), "Usuario/Contraseña incorrecto", Toast.LENGTH_SHORT);
 					toast.show();
 				}
 				
-				con.cerrar();
+				//con.cerrar();
 			} catch (Exception e) {
 				// TODO: handle exception
 				String error = e.toString();
